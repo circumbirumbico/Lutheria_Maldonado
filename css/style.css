@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width:100%;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	color:#FFF;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+	background:url("../img/bg-header.png") repeat-x;
+}
+
+#wrap{
+	width:983px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+}
+
+/* estilos de texto por defecto */
+a,a:hover,a:visited;a:link{
+	text-decoration:none;
+	border:none;
+}
+
+#header{
+	width: 983px;
+	height: 238px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#logo {
+    background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 150px;
+    margin-left: 355px;
+    margin-right: 355px;
+    margin-top: 20px;
+    width: 274px;
+}
+
+
+#menu {
+    background: url("../img/bg-menu.png") no-repeat scroll 0 0 transparent;
+    font: bold 16px Arial,Helvetica,sans-serif;
+    height: 58px;
+    margin: -60px 0 0;
+    padding: 0;
+    width: 983px;
+}
+
+
+#menu ul {
+    font-family: times new roman;
+    height: 58px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#menu li{
+	float:left;
+	padding:0px;
+}
+
+
+#menu li a {
+    color: #4D330C;
+    display: block;
+    font-weight: normal;
+    line-height: 58px;
+    padding: 0 67px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu li a:hover, #menu ul li:hover a{
+	color:#4d330c;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #EFEBE0;
+	background:url("../img/menu-aHover.png") bottom center no-repeat;
+	padding-bottom:1px;
+}
+
+
+#menu li ul {
+    background: none repeat scroll 0 0 #EFEBE0;
+    border: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.5);
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 200px;
+    z-index: 100;
+}
+
+#menu li:hover ul{
+	display:block;
+}
+
+#menu li li{
+	background:url("../img/sub_sep.png") bottom center no-repeat;
+	display:block;
+	float:none;
+	margin:0px;
+	padding:0px;
+	width:200px; 
+}
+
+#menu li:hover li a{
+	background:none;
+}
+
+#menu li ul a{
+	display:block;
+	height:58px;
+	font-size:14px;
+	font-style:normal;
+	margin:0px;
+	padding:0px 10px 0px 15px;
+	text-align:left;
+}
+
+#menu li ul a:hover, #menu li ul li:hover a{
+	borde:0px;
+	color:#3f2a04;
+	text-decoration:none;
+	background: url("../img/sub-menu-aHover.png") center left no-repeat;
+}
+
+#sombra_menu{
+	width:983px;
+	height:27px;
+	background:url("../img/bg-sombra-menu.png") no-repeat;
+}
+
+#banner{
+	width:983px;
+	height:370px;
+	margin:30px auto 0px auto;
+	padding:0px;
+	overflow:hidden;
+	/*border:8px solid #ccc;*/
+	border-radius:5px;
+}
+
+#galeria{
+	width:983px;
+	/*height: 370px;*/
+	height:auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+.galeriaImagenes{
+	width: 983px;
+	/*height: 370px;*/
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#galeriaBottom{
+	width: 872px;
+	height: 25px;
+/*	background: url(../img/sombra_banner.png);*/
+}
+
+#sombra_banner{
+	width:983px;
+	height:67px;
+	background:url("../img/sombra-banner-principal.png") no-repeat;
+	margin:0px auto 0px auto;
+}
+
+
+
+
+
+
+#caja-bienvenidos {
+    background: url("../img/caja-bienvenidos.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 636px;
+    margin-left: -11px;
+    width: 628px;
+	text-shadow: 0 1px 0 #FFFFFF;
+	font-family:"Times New Roman", Times, serif;
+}
+
+#marco-foto {
+    height: 101px;
+    margin: 170px 80px 50px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    width: 100px;
+}
+
+#datos-nombre {
+    font-size: 27px;
+    height: 80px;
+    margin: -114px 240px 0;
+    padding: 0;
+    width: 340px;
+}
+
+
+#texto-bienvenidos {
+    font-size: 17px;
+    height: 180px;
+    margin: 39px 129px 40px 40px;
+    padding: 0;
+    width: 550px;
+}
+
+
+
+#arpa {
+    background: url("../img/arpa.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 739px;
+    margin-right: -95px;
+    margin-top: -640px;
+    padding: 0;
+    width: 464px;
+}
+
+
+#footer{
+	width:100%;
+	height:200px;
+	margin:40px 0px 0px 0px;
+	padding:0px;
+	/*background:#333;*/
+	background:#202020;
+	background:url("../img/bg-footer.png") repeat-x;
+	float:left;
+}
+
+#footer a:link, #footer a:visited{
+	color: #999;
+	text-decoration:none;
+	font-weight:lighter;
+}
+
+#footer a:hover{
+	color:	#CCC;
+	text-align: justify;
+	font-weight: normal;
+}
+
+
+
+#separador_footer{
+	width:100%;
+	height:1px;
+	margin:0px 0px;
+	background:#999;
+}
+
+#footerCentral{
+	width: 872px;
+	height: auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;    /*float:left;*/
+	padding: 0px;
+}
+
+
+#footer_menu {
+    float: left;
+    font-size: 14px;
+    height: 17px;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: -67px;
+    margin-top: 18px;
+    padding: 0;
+    text-decoration: none;
+    width: 650px;
+	text-shadow: 0 1px 0 #000000;
+	font-family:"Times New Roman", Times, serif;
+}
+
+#footer_menu ul{
+	text-align:left;
+	list-style-type:none;
+	color:#CCC;
+	margin:0px;
+	padding:0px;
+	text-transform:lowercase;
+	text-decoration:none;
+}
+
+#footer_menu li{
+	display:inline;
+	padding:0px 10px;
+	text-decoration:none;
+	list-style-type:none;
+}
+
+#footerInfo a{
+	color:#CCC;
+	line-height: 1.2em;
+	margin: 8px 0px;
+	display: block;
+}
+
+#footerInfo a:after{
+	clear: both;
+	height: 1px;
+	content: ".";
+	visibility: hidden;
+	display: block;
+	text-decoration:none;
+}
+
+#footerInfo span{
+	color: #fff;
+}
+
+#caja_datos{
+	width:983px;
+	height:130px;
+	margin:0px auto;
+	padding:0px;
+	color: #333;
+}
+
+
+
+.footer_datos {
+    color: #FFFFFF;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 63px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    text-shadow: 0 1px 0 #000000;
+    width: 192px;
+	font-family: times new roman;
+}
+
+#footer_datos{
+    font-size: 19px;
+    width: 180px;
+}
+
+#linea_amarilla {
+    background: none repeat scroll 0 0 #666;
+    float: right;
+    height: 2px;
+    margin-top: 0;
+    padding: 0;
+    width: 220px;
+}
+
+#direccion {
+    float: right;
+    font-size: 16px;
+    height: 21px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: right;
+    width: 301px;
+}
+
+
+#e-mail {
+    float: right;
+    font-size: 17px;
+    height: 0;
+    margin-top: 0;
+    padding: 0;
+    text-align: right;
+    width: 300px;
+}
