@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Kreon-Light';
+	src: url('fonts/Kreon-Light.eot');
+	src: local('☺'), url('fonts/Kreon-Light.woff') format('woff'), url('fonts/Kreon-Light.ttf') format('truetype'), url('fonts/Kreon-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Regular';
+	src: url('fonts/Kreon-Regular.eot');
+	src: local('☺'), url('fonts/Kreon-Regular.woff') format('woff'), url('fonts/Kreon-Regular.ttf') format('truetype'), url('fonts/Kreon-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Bold';
+	src: url('fonts/Kreon-Bold.eot');
+	src: local('☺'), url('fonts/Kreon-Bold.woff') format('woff'), url('fonts/Kreon-Bold.ttf') format('truetype'), url('fonts/Kreon-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2{
+	font-family: 'Kreon-Bold';
+	font-size: 2.5em;
+}
+
+header{
+	background: url('img/lutheria-maldonado.jpg') black no-repeat left 0 / contain;
+	height: 730px;
+}
+
+section{
+	padding: 1.5em 0;
+}
+
+
+/*perfil*/
+#omar-maldonado{
+	background: #cf8114;
+	color: white;
+}
+
+#omar-maldonado figure{
+	border-radius: 100%;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	height: 253px;
+	overflow: hidden;
+	width: 253px;
+}
+
+#omar-maldonado figure img{
+	height: auto;
+	width: 100%;
+}
+
+/*galeria*/
+#galeria h2{
+	color: #6e7780;
+	text-align: center;
+}
+
+#galeria .col-sm-3{
+	padding: 0;
+}
+
+#galeria img{
+	height: auto;
+	width: 100%;
+}
+
+
+/*inicios*/
+#inicios{
+	background: #cf8114;
+	color: white;
+	text-align: center;
+}
