@@ -12,5 +12,7 @@
 <body>
 
 <header>
-	<div class="container"></div>
+	<div class="container">
+		<nav class="pull-right"> <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?> </nav>
+	</div>
 </header>
