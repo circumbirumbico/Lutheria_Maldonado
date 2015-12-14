@@ -40,6 +40,25 @@ section{
 	padding: 1.5em 0;
 }
 
+a, button{
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+button{
+	background: none;
+	border-radius: 6px;
+	border: 1px solid;
+	padding: 6px 18px;
+	text-align: center;
+}
+
+button:hover{
+	background: white;
+	border: 1px solid white;
+}
+
 
 /*perfil*/
 #omar-maldonado{
@@ -61,6 +80,10 @@ section{
 }
 
 /*galeria*/
+#galeria{
+	padding: 0;
+}
+
 #galeria h2{
 	color: #6e7780;
 	text-align: center;
@@ -81,4 +104,31 @@ section{
 	background: #cf8114;
 	color: white;
 	text-align: center;
+}
+
+#inicios button:hover{
+	color: #cf8114;
+}
+
+
+/*luthier*/
+#luthier{
+	background-image: linear-gradient(
+					      rgba(78,78,78, .6), 
+					      rgba(78,78,78, .6)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -250px;
+	background-size: cover, cover;
+	color: white;
+	height: 337px;
+	position: relative;
+	text-align: center;
+}
+
+
+#testimonio{
+	color: #4e4e4e;
+	font-family: 'Kreon-Regular';
+	text-align: center;
+	font-size: 2.5em;
 }

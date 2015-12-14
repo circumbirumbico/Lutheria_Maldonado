@@ -59,12 +59,19 @@
 
 <section id="inicios">
 	<h2>Inicios en la Luthería</h2>
-	<p>Mis inicios en este oficio de construir instrumentos (lutheria) data de cuando tenía cerca de nueve años de edad; mi padre en aquel entonces me regaló una guitarra que él construyó, y aparte de entusiasmarme en la ejecución de dicho instrumento me entusiasmó en la posibilidad de construirlos.</p> </section>
+	<p>Mis inicios en este oficio de construir instrumentos (lutheria) data de cuando tenía cerca de nueve años de edad; mi padre en aquel entonces me regaló una guitarra que él construyó, y aparte de entusiasmarme en la ejecución de dicho instrumento me entusiasmó en la posibilidad de construirlos.</p>
+	<button>Leer más</button>
+</section>
 
 <section id="luthier">
 	<h2>Omar Maldonado</h2>
-	<p>Patrocina Consejo Nacional de la Cultura y Las Artes Fondo Nacional de Desarrollo Cultural y Artes FONDART Gobierno de Chile</p> </section>
+	<p>Patrocina Consejo Nacional de la Cultura y Las Artes Fondo Nacional de Desarrollo Cultural y Artes FONDART Gobierno de Chile</p>
+	<button>Ver video</button>
+</section>
 
+<section id="testimonio">
+	<p>“LA LUTHERÍA SATISFACE PLENAMENTE MI ESPÍRITU Y MI INTENCIÓN DE PODER ENSEÑAR A AQUELLOS QUE DESEEN APRENDER ÉSTE OFICIO TAN HERMOSO”</p>
+</section>
 
 	
 <?php get_footer(); ?>
