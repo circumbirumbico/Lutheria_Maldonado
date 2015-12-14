@@ -32,6 +32,7 @@
 
 
 <script src="<?php bloginfo('template_directory') ?>/js/jquery-2.1.4.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/app.js"></script>
 
 
 </body>

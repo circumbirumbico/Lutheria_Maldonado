@@ -118,6 +118,50 @@ header nav li:last-child a{
 	padding-right: 0;
 }
 
+/*menu-responsivo*/
+header nav.responsive{
+	background: #2c3e50;
+	display: none;
+	height: 100%;
+	left: -250px;
+	margin-top: 0;
+	padding: 1em 0;
+	position: absolute;
+	top: 0;
+	width: 250px;
+	z-index: 99;
+}
+
+header nav.responsive li{
+	display: block;
+}
+
+header nav.responsive a{
+	display: block;
+	padding: 6px 12px;
+}
+
+header nav.responsive a:hover{
+	background: #34495e;
+	text-decoration: none;
+}
+
+header .icono{
+	height: 24px;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	width: 24px;
+}
+
+header .icono-menu{
+	background: url('img/menu.png') no-repeat;
+}
+
+header .icono-cerrar{
+	background: url('img/cerrar.png') no-repeat;
+}
+
 /*perfil*/
 #omar-maldonado{
 	background: #cf8114;
@@ -293,6 +337,8 @@ header nav li:last-child a{
 
 
 /* ############ Mediaqueries ############ */
+
+/*768*/
 @media screen and (max-width: 768px){
 	
 	#omar-maldonado h1{
@@ -308,4 +354,27 @@ header nav li:last-child a{
 	#contacto input.asunto{
 		margin-bottom: 22px;
 	}
+}
+
+/*480*/
+@media screen and (max-width: 480px){
+	header .container{
+		background-position: center, center left;		
+		height: 400px;
+	}
+
+	header nav{
+		display: none;
+	}
+
+	header nav.responsive{
+		display: block;
+	}
+}
+
+/*320*/
+@media screen and (max-width: 320px){
+	header .container{
+		background-size: 80%, cover;
+	}	
 }

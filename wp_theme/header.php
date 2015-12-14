@@ -13,6 +13,14 @@
 
 <header>
 	<div class="container">
-		<nav class="pull-right"> <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?> </nav>
+		<nav class="pull-right"> 
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?>
+		</nav>
+
+		<a href="#" class="icono icono-menu"></a>
+
+		<nav class="responsive"> 
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?> 
+		</nav>
 	</div>
 </header>
