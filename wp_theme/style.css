@@ -1,3 +1,14 @@
+/*
+Theme Name: Luthería Maldonado
+Theme URI: http://www.luteriamaldonado.cl
+Author: Carlos Sánchez
+Author URI: http://www.westerndesign.cl
+Description: 
+Version: 1.1
+Tags: html5, css3, responsive design, responsive-layout, seo, icofonts.
+Text Domain: luteriamaldonado
+*/
+
 @font-face {
 	font-family: 'Kreon-Light';
 	src: url('fonts/Kreon-Light.eot');
@@ -28,25 +39,29 @@ body{
 
 h1, h2{
 	font-family: 'Kreon-Bold';
-	font-size: 2.5em;
+	font-size: 2.4em;
+	letter-spacing: 3px;
+	margin-top: 0;
 }
 
-header{
-	background: url('img/lutheria-maldonado.jpg') black no-repeat left 0 / contain;
-	height: 730px;
+p{
+	font-size: 17px;
 }
 
-section{
-	padding: 1.5em 0;
+section,
+footer{
+	padding: 3em 0;
 }
 
-a, button{
+a, button, input{
 	-webkit-transition: all .25s;
 	-o-transition: all .25s;
 	transition: all .25s;
 }
 
-button{
+button,
+input,
+textarea{
 	background: none;
 	border-radius: 6px;
 	border: 1px solid;
@@ -59,6 +74,21 @@ button:hover{
 	border: 1px solid white;
 }
 
+h2 + p{
+	margin-bottom: 28px;
+}
+
+/*header*/
+header{
+	background: black;
+}
+
+header .container{
+	background-image: url('img/lutheria-maldonado.png'), url('img/lutheria-maldonado.jpg');
+	background-position: center right, center left;
+	background-repeat: no-repeat;
+	height: 730px;
+}
 
 /*perfil*/
 #omar-maldonado{
@@ -76,26 +106,36 @@ button:hover{
 
 #omar-maldonado figure img{
 	height: auto;
-	width: 100%;
+	width: 260px;
 }
 
 /*galeria*/
 #galeria{
-	padding: 0;
+	padding-bottom: 0;
 }
 
 #galeria h2{
 	color: #6e7780;
+	margin-bottom: 42px;
 	text-align: center;
 }
 
 #galeria .col-sm-3{
+	overflow: hidden;
 	padding: 0;
 }
 
 #galeria img{
 	height: auto;
+	transition: all .25s;
 	width: 100%;
+}
+
+#galeria img:hover{
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 
@@ -104,6 +144,11 @@ button:hover{
 	background: #cf8114;
 	color: white;
 	text-align: center;
+}
+
+#inicios p{
+	margin: 0 auto 2em;
+	width: 900px;
 }
 
 #inicios button:hover{
@@ -120,15 +165,110 @@ button:hover{
 	background-position: center center, 0 -250px;
 	background-size: cover, cover;
 	color: white;
-	height: 337px;
 	position: relative;
 	text-align: center;
 }
 
+#luthier p{
+	margin: 0 auto 28px;
+	width: 460px;
+}
 
+#luthier button:hover{
+	color: #333;
+}
+
+/*testimonio*/
 #testimonio{
 	color: #4e4e4e;
 	font-family: 'Kreon-Regular';
+	text-align: center;	
+}
+
+#testimonio p{
+	font-size: 2.4em;
+	margin: 0 auto;
+	width: 830px;
+}
+
+/*contacto*/
+#contacto{
+	background-image: linear-gradient(
+					      rgba(51,51,51, .8), 
+					      rgba(51,51,51, .8)
+					    ), url('img/contacto-lutheria-maldonado.jpg');
+	background-position: center center, 0 -650px;
+	background-size: cover, cover;
+	color: white;
+}
+
+#contacto .sobre{
+	margin-bottom: 28px;
 	text-align: center;
-	font-size: 2.5em;
+}
+
+#contacto h2{
+	font-family: 'Kreon-Light';
+	font-weight: normal;
+	text-align: center;
+}
+
+#contacto h2 strong{
+	font-family: 'Kreon-Bold';
+	font-weight: normal;
+}
+
+#contacto input,
+#contacto textarea{
+	margin-bottom: 22px;
+	text-align: left;
+	width: 100%;
+}
+
+#contacto textarea{
+	display: block;
+	height: 90px;
+}
+
+#contacto input.asunto{
+	margin-bottom: 0;
+}
+
+#contacto input[type="submit"]{
+	background: #cf8114;
+	border: 1px solid #cf8114;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#contacto input[type="submit"]:hover{
+	background: transparent;
+	border: 1px solid #DA9536;
+	color: #DA9536;
+}
+
+#contacto .copyright{
+	margin-top: 42px;
+	text-align: center;
+}
+
+
+
+/* ############ Mediaqueries ############ */
+@media screen and (max-width: 768px){
+	
+	#omar-maldonado h1{
+		margin-top: 22.5px;
+	}
+
+	#inicios p,
+	#luthier p,
+	#testimonio p{
+		width: 90%;
+	}
+
+	#contacto input.asunto{
+		margin-bottom: 22px;
+	}
 }
