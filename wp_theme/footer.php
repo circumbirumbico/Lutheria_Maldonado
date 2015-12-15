@@ -1,7 +1,7 @@
 <!-- footer -->
 <footer id="contacto">
 	<div class="sobre">
-		<img src="<?php bloginfo('template_directory') ?>/img/contacto-lutheria.png" alt="Contacto Luthería">
+		<i class="fa fa-envelope-o"></i>
 	</div>
 
 	<h2><strong>Contacto</strong> <?php bloginfo('name') ?></h2>
