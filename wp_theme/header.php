@@ -17,7 +17,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?>
 		</nav>
 
-		<a href="#" class="icono icono-menu"></a>
+		<i class="icono fa fa-bars"></i>
 
 		<nav class="responsive"> 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?> 

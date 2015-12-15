@@ -25,33 +25,41 @@
 	<div class="container-fluid">
 
 		<div class="row">
-			<div class="col-sm-3">
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</div>
+			</figure>
 		</div>	
 
 		<div class="row">
-			<div class="col-sm-3">
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</div>
-			<div class="col-sm-3">
+			</figure>
+			<figure class="col-sm-3">
+				<span class="fa fa-picture-o"></span>
 				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</div>
+			</figure>
 		</div>	
 
 	</div>

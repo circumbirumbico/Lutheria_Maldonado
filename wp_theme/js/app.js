@@ -3,7 +3,7 @@ $(function(){
 
 	// abrir menú
 	function Abrir(){	
-		$('header .icono').removeClass('icono-menu').addClass('icono-cerrar');
+		$('header .icono').removeClass('fa-bars').addClass('fa-times');
 		$('nav.responsive').stop().animate({
 			left : 0
 		});
@@ -11,7 +11,7 @@ $(function(){
 
 	// cerrar menú
 	function Cerrar(){
-		$('header .icono').removeClass('icono-cerrar').addClass('icono-menu');
+		$('header .icono').removeClass('fa-times').addClass('fa-bars');
 		$('nav.responsive').stop().animate({
 			left : -250
 		});
@@ -21,7 +21,7 @@ $(function(){
 	$('header .icono').click(function (e){
 		e.preventDefault();
 
-		if( $(this).hasClass('icono-menu') ){
+		if( $(this).hasClass('fa-bars') ){
 			Abrir();
 		} else {
 			Cerrar();

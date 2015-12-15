@@ -9,6 +9,8 @@ Tags: html5, css3, responsive design, responsive-layout, seo, icofonts.
 Text Domain: luteriamaldonado
 */
 
+@import url('css/font-awesome.css');
+
 @font-face {
 	font-family: 'Kreon-Light';
 	src: url('fonts/Kreon-Light.eot');
@@ -146,20 +148,19 @@ header nav.responsive a:hover{
 	text-decoration: none;
 }
 
-header .icono{
+header .fa{
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-size: 2em;
 	height: 24px;
 	position: absolute;
-	right: 1em;
-	top: 1em;
+	right: .5em;
+	top: .5em;
 	width: 24px;
-}
-
-header .icono-menu{
-	background: url('img/menu.png') no-repeat;
-}
-
-header .icono-cerrar{
-	background: url('img/cerrar.png') no-repeat;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
 }
 
 /*perfil*/
@@ -192,13 +193,30 @@ header .icono-cerrar{
 	text-align: center;
 }
 
-#galeria .col-sm-3{
+#galeria figure{
 	overflow: hidden;
 	padding: 0;
+	position: relative;
+}
+
+#galeria figure .fa-picture-o{
+	color: white;
+	font-size:2.5em;
+	left: 50%;
+	margin: -17.5px 0 0 -18.7px;
+	opacity: 0.8;
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
 }
 
 #galeria img{
 	height: auto;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
 	transition: all .25s;
 	width: 100%;
 }
@@ -212,6 +230,9 @@ header .icono-cerrar{
 	filter: grayscale(70%);
 }
 
+#galeria img:hover #galeria h2{
+	color: olive;
+}
 
 /*inicios*/
 #inicios{
@@ -277,6 +298,7 @@ header .icono-cerrar{
 }
 
 #contacto .sobre{
+	font-size: 4em;
 	margin-bottom: 28px;
 	text-align: center;
 }
@@ -367,7 +389,8 @@ header .icono-cerrar{
 		display: none;
 	}
 
-	header nav.responsive{
+	header nav.responsive,
+	header .fa{
 		display: block;
 	}
 }
