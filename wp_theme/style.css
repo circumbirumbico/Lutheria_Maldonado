@@ -265,8 +265,12 @@ header .fa{
 }
 
 #luthier p{
-	margin: 0 auto 28px;
+	margin: 0 auto;
 	width: 460px;
+}
+
+#luthier button{
+	margin-top: 28px;
 }
 
 #luthier button:hover{

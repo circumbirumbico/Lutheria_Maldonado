@@ -7,13 +7,19 @@
 
 			<div class="col-sm-4">
 				<figure>
-					<img src="<?php bloginfo('template_directory') ?>/img/omar-maldonado.jpg" alt="">
+					<?php echo get_the_post_thumbnail(29) ?>
 				</figure>
 			</div>
 
 			<div class="col-sm-8">
-				<h1>Omar Maldonado</h1>
-				<p>Por la presente página quiero invitarles a ver instrumentos que he construido en mi taller, muchos de ellos con maderas nativas con las que he logrado excelentes resultados musicales y belleza en la construcción. La mayoría de los instrumentos los hago por encargo tomándome varios meses su construcción, todos ellos hechos con el máximo de cariño, cuidado y dedicación. </p>
+				<h1><?php echo get_the_title(29) ?></h1>
+				<?php 
+					$my_postid = 29;
+					$content_post = get_post($my_postid);
+					$content = $content_post->post_content;
+					$content = apply_filters('the_content', $content);
+					echo $content
+				?>
 			</div>
 		</div>
 	</div>
@@ -67,21 +73,41 @@
 
 <!-- inicios -->
 <section id="inicios">
-	<h2>Inicios en la Luthería</h2>
-	<p>Mis inicios en este oficio de construir instrumentos (lutheria) data de cuando tenía cerca de nueve años de edad; mi padre en aquel entonces me regaló una guitarra que él construyó, y aparte de entusiasmarme en la ejecución de dicho instrumento me entusiasmó en la posibilidad de construirlos.</p>
+	<h2><?php echo get_the_title(32) ?></h2>
+
+	<?php 
+		$my_postid = 32;
+		$content_post = get_post($my_postid);
+		$content = $content_post->post_content;
+		$content = apply_filters('the_content', $content);
+		echo $content
+	?>
+ 
 	<button>Leer más</button>
 </section>
 
 <!-- luthier -->
 <section id="luthier">
 	<h2>Omar Maldonado</h2>
-	<p>Patrocina <strong>Consejo Nacional de la Cultura y Las Artes</strong> Fondo Nacional de Desarrollo Cultural y Artes <strong>FONDART</strong> <strong>Gobierno de Chile</strong></p>
+	<?php 
+		$my_postid = 38;
+		$content_post = get_post($my_postid);
+		$content = $content_post->post_content;
+		$content = apply_filters('the_content', $content);
+		echo $content
+	?>
 	<button>Ver video</button>
 </section>
 
 <!-- testimonio -->
 <section id="testimonio">
-	<p>“LA LUTHERÍA SATISFACE PLENAMENTE MI ESPÍRITU Y MI INTENCIÓN DE PODER ENSEÑAR A AQUELLOS QUE DESEEN APRENDER ÉSTE OFICIO TAN HERMOSO”</p>
+	<?php 
+		$my_postid = 34;
+		$content_post = get_post($my_postid);
+		$content = $content_post->post_content;
+		$content = apply_filters('the_content', $content);
+		echo $content
+	?>
 </section>
 	
 <?php get_footer(); ?>
