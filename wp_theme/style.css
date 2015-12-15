@@ -204,7 +204,7 @@ header .fa{
 	font-size:2.5em;
 	left: 50%;
 	margin: -17.5px 0 0 -18.7px;
-	opacity: 0.8;
+	opacity: 0;
 	position: absolute;
 	top: 50%;
 	z-index: 99;
@@ -230,8 +230,8 @@ header .fa{
 	filter: grayscale(70%);
 }
 
-#galeria img:hover #galeria h2{
-	color: olive;
+#galeria figure:hover .fa-picture-o{
+	opacity: .7;
 }
 
 /*inicios*/
@@ -392,6 +392,10 @@ header .fa{
 	header nav.responsive,
 	header .fa{
 		display: block;
+	}
+
+	#omar-maldonado figure{
+		margin: 0 auto;
 	}
 }
 
