@@ -1,6 +1,8 @@
 // document ready
 $(function(){
 
+//########## Menú ##################
+
 	// abrir menú
 	function Abrir(){	
 		$('header .icono').removeClass('fa-bars').addClass('fa-times');
@@ -28,12 +30,10 @@ $(function(){
 		}
 	});
 
-//############################
+//########## Galería ##################
 
-	// Galería
 	$('#galeria a').each(function(){
 		$(this).wrapAll( "<figure class='col-sm-3'></figure>");
-		$(this).attr('rel','lightbox'); 
 	});
 
 });
