@@ -5,7 +5,7 @@ var gulp 		= require('gulp'),
 
 // browserSync
 gulp.task('browser-sync', function(){
-	browserSync.init(["style.css" , "/js/app.js" , "*.php"],{
+	browserSync.init(["style.css" , "./js/app.js" , "*.php"],{
 		open: false,
 		options: {
 			proxy: "localhost:3000/wordpress",
@@ -20,8 +20,7 @@ gulp.task('browser-sync', function(){
 
 // Watching for changes
 gulp.task('watch',['browser-sync'], function(){
-	gulp.watch(['*.php', 'style.css', 'js/app.js'], ['browser-sync']);
-	//gulp.watch(['dev/css/*.css', 'dev/stylus/*.styl'], ['estilos']);
+	gulp.watch();
 });
 
 

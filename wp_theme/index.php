@@ -27,46 +27,18 @@
 
 <!-- galeria -->
 <section id="galeria">
-	<h2>Galería</h2>
+	<h2><?php echo get_the_title(42) ?></h2>
 	<div class="container-fluid">
 
-		<div class="row">
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</figure>
-		</div>	
-
-		<div class="row">
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria2.jpg" alt="">
-			</figure>
-			<figure class="col-sm-3">
-				<span class="fa fa-picture-o"></span>
-				<img src="<?php bloginfo('template_directory') ?>/img/galeria.jpg" alt="">
-			</figure>
-		</div>	
+		<div class="row">			
+			<?php 
+				$my_postid = 42;
+				$content_post = get_post($my_postid);
+				$content = $content_post->post_content;
+				$content = apply_filters('the_content', $content);
+				echo $content;
+			?>
+		</div>
 
 	</div>
 </section>

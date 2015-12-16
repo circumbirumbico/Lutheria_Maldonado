@@ -7,20 +7,11 @@
 	<h2><strong>Contacto</strong> <?php bloginfo('name') ?></h2>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5 col-sm-offset-1">
-				<input type="text" placeholder="Nombre" require>
-				<input type="text" placeholder="Email" require>
-				<input type="text" placeholder="Asunto" class="asunto" require>
-			</div>
-
-			<div class="col-sm-5">
-				<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" require></textarea>
-				<input type="submit" placeholder="Asunto" class="asunto">
-			</div>
+			<?php echo do_shortcode( '[contact-form-7 id="16" title="Contact form 1"]' ); ?>
 		</div>
 
 		<div class="copyright">
-			© 2015 LUTHERÍA MALDONADO | Todos los derechos reservados.
+			© 2015 <?php bloginfo('name') ?> | Todos los derechos reservados.
 		</div>
 
 	</div>
@@ -34,6 +25,7 @@
 <script src="<?php bloginfo('template_directory') ?>/js/jquery-2.1.4.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/app.js"></script>
 
+<?php wp_footer() ?>
 
 </body>
 </html>

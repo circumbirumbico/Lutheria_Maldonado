@@ -17,7 +17,7 @@ $(function(){
 		});
 	}
 
-	// Pregunto
+	// Menú
 	$('header .icono').click(function (e){
 		e.preventDefault();
 
@@ -27,6 +27,13 @@ $(function(){
 			Cerrar();
 		}
 	});
-		
+
+//############################
+
+	// Galería
+	$('#galeria a').each(function(){
+		$(this).wrapAll( "<figure class='col-sm-3'></figure>");
+		$(this).attr('rel','lightbox'); 
+	});
 
 });
