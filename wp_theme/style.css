@@ -1,0 +1,421 @@
+/*
+Theme Name: Luthería Maldonado
+Theme URI: http://www.luteriamaldonado.cl
+Author: Carlos Sánchez
+Author URI: http://www.westerndesign.cl
+Description: 
+Version: 1.1
+Tags: html5, css3, responsive design, responsive-layout, seo, icofonts.
+Text Domain: luteriamaldonado
+*/
+
+@import url('css/font-awesome.css');
+
+@font-face {
+	font-family: 'Kreon-Light';
+	src: url('fonts/Kreon-Light.eot');
+	src: local('☺'), url('fonts/Kreon-Light.woff') format('woff'), url('fonts/Kreon-Light.ttf') format('truetype'), url('fonts/Kreon-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Regular';
+	src: url('fonts/Kreon-Regular.eot');
+	src: local('☺'), url('fonts/Kreon-Regular.woff') format('woff'), url('fonts/Kreon-Regular.ttf') format('truetype'), url('fonts/Kreon-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Bold';
+	src: url('fonts/Kreon-Bold.eot');
+	src: local('☺'), url('fonts/Kreon-Bold.woff') format('woff'), url('fonts/Kreon-Bold.ttf') format('truetype'), url('fonts/Kreon-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2{
+	font-family: 'Kreon-Bold';
+	font-size: 2.4em;
+	letter-spacing: 3px;
+	margin-top: 0;
+}
+
+p{
+	font-size: 17px;
+}
+
+section,
+footer{
+	padding: 3em 0;
+}
+
+a{
+	cursor: pointer;
+}
+
+a, button, input, textarea{
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+button,
+input,
+textarea{
+	background: none;
+	border-radius: 6px;
+	border: 1px solid;
+	padding: 6px 18px;
+	text-align: center;
+	outline: 0;
+}
+
+button:hover{
+	background: white;
+	border: 1px solid white;
+}
+
+h2 + p{
+	margin-bottom: 28px;
+}
+
+/*header*/
+header{
+	background: black;
+}
+
+header .container{
+	background-image: url('img/lutheria-maldonado.png'), url('img/lutheria-maldonado.jpg');
+	background-position: 99%, center left;
+	background-repeat: no-repeat;
+	height: 730px;
+}
+
+header nav{
+	margin-top: 1em;
+}
+
+header nav li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header nav a{
+	color: #bbbbbb;
+	padding: 6px 16px;
+	text-transform: uppercase;
+}
+
+header nav a:hover{
+	color: #bbbbbb;
+}
+
+header nav li:last-child a{
+	padding-right: 0;
+}
+
+/*menu-responsivo*/
+header nav.responsive{
+	background: #2c3e50;
+	display: none;
+	height: 100%;
+	left: -250px;
+	margin-top: 0;
+	padding: 1em 0;
+	position: absolute;
+	top: 0;
+	width: 250px;
+	z-index: 99;
+}
+
+header nav.responsive li{
+	display: block;
+}
+
+header nav.responsive a{
+	display: block;
+	padding: 6px 12px;
+}
+
+header nav.responsive a:hover{
+	background: #34495e;
+	text-decoration: none;
+}
+
+header .fa{
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-size: 2em;
+	height: 24px;
+	position: absolute;
+	right: .5em;
+	top: .5em;
+	width: 24px;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+/*perfil*/
+#omar-maldonado{
+	background: #cf8114;
+	color: white;
+}
+
+#omar-maldonado figure{
+	border-radius: 100%;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	height: 253px;
+	overflow: hidden;
+	width: 253px;
+}
+
+#omar-maldonado figure img{
+	height: auto;
+	width: 260px;
+}
+
+/*galeria*/
+#galeria{
+	padding-bottom: 0;
+}
+
+#galeria p{
+	margin: 0;
+}
+
+#galeria h2{
+	color: #6e7780;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#galeria figure{
+	height: 254px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+#galeria figure .fa-picture-o{
+	color: white;
+	font-size:2.5em;
+	left: 50%;
+	margin: -17.5px 0 0 -18.7px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+#galeria img{
+	height: auto;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+	width: 100%;
+}
+
+#galeria img:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
+}
+
+#galeria figure:hover .fa-picture-o{
+	opacity: .7;
+}
+
+/*inicios*/
+#inicios{
+	background: #cf8114;
+	color: white;
+	text-align: center;
+}
+
+#inicios p{
+	margin: 0 auto 2em;
+	width: 900px;
+}
+
+#inicios button:hover{
+	color: #cf8114;
+}
+
+
+/*luthier*/
+#luthier{
+	background-image: linear-gradient(
+					      rgba(78,78,78, .6), 
+					      rgba(78,78,78, .6)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -250px;
+	background-size: cover, cover;
+	color: white;
+	position: relative;
+	text-align: center;
+}
+
+#luthier p{
+	margin: 0 auto;
+	width: 460px;
+}
+
+#luthier button{
+	margin-top: 28px;
+}
+
+#luthier button:hover{
+	color: #333;
+}
+
+/*testimonio*/
+#testimonio{
+	color: #4e4e4e;
+	font-family: 'Kreon-Regular';
+	text-align: center;	
+}
+
+#testimonio p{
+	font-size: 2.4em;
+	margin: 0 auto;
+	width: 830px;
+}
+
+/*contacto*/
+#contacto{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/contacto-lutheria-maldonado.jpg');
+	background-position: center center, 0 -650px;
+	background-size: cover, cover;
+	color: white;
+}
+
+#contacto .sobre{
+	font-size: 4em;
+	margin-bottom: 28px;
+	text-align: center;
+}
+
+#contacto h2{
+	font-family: 'Kreon-Light';
+	font-weight: normal;
+	text-align: center;
+}
+
+#contacto h2 strong{
+	font-family: 'Kreon-Bold';
+	font-weight: normal;
+}
+
+#contacto input:not([type="submit"]):focus,
+#contacto textarea:focus{
+	background: white;
+	color: #333;
+	outline: 0;
+}
+
+#contacto input,
+#contacto textarea{
+	border-color: rgba(243, 243, 243, .25);
+	margin-bottom: 22px;
+	text-align: left;
+	width: 100%;
+}
+
+#contacto textarea{
+	display: block;
+	height: 90px;
+}
+
+#contacto input.asunto{
+	margin-bottom: 0;
+}
+
+#contacto input[type="submit"]{
+	background: #cf8114;
+	border: 1px solid #cf8114;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#contacto input[type="submit"]:hover{
+	background: transparent;
+	border: 1px solid #DA9536;
+	color: #DA9536;
+}
+
+#contacto .copyright{
+	margin-top: 42px;
+	text-align: center;
+}
+
+#contacto div.wpcf7-validation-errors{
+	clear: both;
+}
+
+
+
+/* ############ Mediaqueries ############ */
+
+/*768*/
+@media screen and (max-width: 768px){
+	
+	#omar-maldonado h1{
+		margin-top: 22.5px;
+	}
+
+	#inicios p,
+	#luthier p,
+	#testimonio p{
+		width: 90%;
+	}
+
+	#contacto input.asunto{
+		margin-bottom: 22px;
+	}
+}
+
+/*480*/
+@media screen and (max-width: 480px){
+	header .container{
+		background-position: center, center left;		
+		height: 400px;
+	}
+
+	header nav{
+		display: none;
+	}
+
+	header nav.responsive,
+	header .fa{
+		display: block;
+	}
+
+	#omar-maldonado figure{
+		margin: 0 auto;
+	}
+}
+
+/*320*/
+@media screen and (max-width: 320px){
+	header .container{
+		background-size: 80%, cover;
+	}	
+}
