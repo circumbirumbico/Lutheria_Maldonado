@@ -198,6 +198,7 @@ header .fa{
 }
 
 #galeria figure{
+	height: 254px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;

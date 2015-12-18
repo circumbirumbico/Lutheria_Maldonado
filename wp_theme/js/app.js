@@ -32,8 +32,10 @@ $(function(){
 
 //########## Galería ##################
 
-	$('#galeria a').each(function(){
-		$(this).wrapAll( "<figure class='col-sm-3'></figure>");
+	$('#galeria img').each(function(){
+		$(this).wrapAll( "<figure class='col-sm-3'></figure>"); //# envuelvo imágenes
+		$(this).parents('a').attr('rel', 'lightbox[roadtrip]'); //# agrego rel
+		$(this).parents('a').attr('title', $(this).attr('alt')); //# agrego title a galería
 	});
 
 });
