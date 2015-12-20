@@ -5,7 +5,7 @@ $(function(){
 
 	// abrir menú
 	function Abrir(){	
-		$('header .icono').removeClass('fa-bars').addClass('fa-times');
+		$('.topbar .icono').removeClass('fa-bars').addClass('fa-times');
 		$('nav.responsive').stop().animate({
 			left : 0
 		});
@@ -13,14 +13,14 @@ $(function(){
 
 	// cerrar menú
 	function Cerrar(){
-		$('header .icono').removeClass('fa-times').addClass('fa-bars');
+		$('.topbar .icono').removeClass('fa-times').addClass('fa-bars');
 		$('nav.responsive').stop().animate({
 			left : -250
 		});
 	}
 
 	// Menú
-	$('header .icono').click(function (e){
+	$('.topbar .icono').click(function (e){
 		e.preventDefault();
 
 		if( $(this).hasClass('fa-bars') ){

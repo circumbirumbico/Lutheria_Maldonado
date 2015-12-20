@@ -37,6 +37,7 @@ Text Domain: luteriamaldonado
 
 body{
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 110px;
 }
 
 h1, h2{
@@ -86,7 +87,8 @@ h2 + p{
 }
 
 /*header*/
-header{
+header,
+.topbar{
 	background: black;
 }
 
@@ -97,58 +99,71 @@ header .container{
 	height: 730px;
 }
 
-header nav{
-	margin-top: 1em;
+.topbar{
+	height: 110px;
+	padding: 12px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
 }
 
-header nav li{
+.topbar nav{
+	line-height: 83px;
+}
+
+.topbar nav ul{
+	margin: 0;
+}
+
+.topbar nav li{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-header nav a{
+.topbar nav a{
 	color: #bbbbbb;
 	padding: 6px 16px;
 	text-transform: uppercase;
 }
 
-header nav a:hover{
+.topbar nav a:hover{
 	color: #bbbbbb;
 }
 
-header nav li:last-child a{
+.topbar nav li:last-child a{
 	padding-right: 0;
 }
 
 /*menu-responsivo*/
-header nav.responsive{
+.topbar nav.responsive{
 	background: #2c3e50;
 	display: none;
 	height: 100%;
 	left: -250px;
 	margin-top: 0;
 	padding: 1em 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 250px;
 	z-index: 99;
 }
 
-header nav.responsive li{
+.topbar nav.responsive li{
 	display: block;
 }
 
-header nav.responsive a{
+.topbar nav.responsive a{
 	display: block;
 	padding: 6px 12px;
 }
 
-header nav.responsive a:hover{
+.topbar nav.responsive a:hover{
 	background: #34495e;
 	text-decoration: none;
 }
 
-header .fa{
+.topbar .fa{
 	color: white;
 	cursor: pointer;
 	display: none;
@@ -161,6 +176,11 @@ header .fa{
 	-webkit-transition: all .25s;
 	-o-transition: all .25s;
 	transition: all .25s;
+}
+
+.topbar figure img{
+	height: auto;
+	width: 180px;
 }
 
 /*perfil*/
@@ -399,12 +419,12 @@ header .fa{
 		height: 400px;
 	}
 
-	header nav{
+	.topbar nav{
 		display: none;
 	}
 
-	header nav.responsive,
-	header .fa{
+	.topbar nav.responsive,
+	.topbar .fa{
 		display: block;
 	}
 

@@ -12,8 +12,15 @@
 </head>
 <body>
 
-<header>
+<div class="topbar">
 	<div class="container">
+
+		<?php if( is_page() ) {  // Muestra el logo en el topbar sólo en páginas interiores ?>
+			<figure class="pull-left">
+				<img src="<?php bloginfo('template_directory') ?>/img/lutheria-maldonado.png" alt="<?php bloginfo('name') ?>">
+			</figure>
+		<?php } ?>
+
 		<nav class="pull-right"> 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?>
 		</nav>
@@ -24,4 +31,4 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?> 
 		</nav>
 	</div>
-</header>
+</div>
