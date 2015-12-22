@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Plantilla de páginas internas
+Template Name: Plantilla de Construcción
 */
 ?>
 
