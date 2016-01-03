@@ -15,10 +15,12 @@
 <div class="topbar">
 	<div class="container">
 
-		<?php if( is_page() ) {  // Muestra el logo en el topbar sólo en páginas interiores ?>
-			<figure class="pull-left">
-				<img src="<?php bloginfo('template_directory') ?>/img/lutheria-maldonado.png" alt="<?php bloginfo('name') ?>">
-			</figure>
+		<?php if( is_page() ) {  // Mostrar logo del topbar sólo en páginas ?>
+			<a href="<?php bloginfo('url') ?>">
+				<figure class="pull-left">
+					<img src="<?php bloginfo('template_directory') ?>/img/lutheria-maldonado.png" alt="<?php bloginfo('name') ?>">
+				</figure>
+			</a>
 		<?php } ?>
 
 		<nav class="pull-right"> 
