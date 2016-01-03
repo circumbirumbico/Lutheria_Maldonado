@@ -6,7 +6,7 @@ Template Name: Plantilla de Construcción
 
 <?php get_header(); ?>
 
-<header id="cabecera-historia"></header>
+<header id="cabecera-construccion"></header>
 
 <h1 class="interno">
 	<div class="container">
@@ -17,26 +17,33 @@ Template Name: Plantilla de Construcción
 		</div>
 	</div>
 </h1>
-<!-- omar-maldonado -->
-<section id="historia">
+
+<!-- construcción -->
+<section id="construccion">
 	<div class="container">
 		<div class="row">	
 
-			<div class="col-sm-4">
-				<figure class="circulo">
-					<?php echo get_the_post_thumbnail(9) ?>
-				</figure>
-			</div>
+		<?php 
+			query_posts('cat=3'); 
+			while (have_posts()) : the_post();
+		?>
 
-			<div class="col-sm-8">
-				<?php 
-					$my_postid = 5;
-					$content_post = get_post($my_postid);
-					$content = $content_post->post_content;
-					$content = apply_filters('the_content', $content);
-					echo $content
-				?>
+			<div class="col-sm-3">
+				<figure class="construccion">
+					<?php echo get_the_post_thumbnail(); ?>
+					<figcaption><?php echo get_the_title(); ?></figcaption>
+				</figure>
+
+				<div class="detalle">
+					<?php the_content(); ?>
+				</div>
 			</div>
+				
+		<?php endwhile; ?>
+
+			
+
+		
 		</div>
 	</div>
 </section>

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><?php bloginfo('name') ?></title>
+	<title><?php if(is_home()) { echo bloginfo("name"); echo " | "; echo bloginfo("description"); } else { echo wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
+
 	<meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1">
 	<meta name="description" content="<?php echo bloginfo('description') ?>">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css">

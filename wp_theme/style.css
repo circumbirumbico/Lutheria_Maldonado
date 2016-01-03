@@ -434,6 +434,51 @@ header .container{
 }
 
 
+/*construccion*/
+#cabecera-construccion{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -150px;
+	background-size: cover, cover;
+	height: 600px;
+}
+
+figure.construccion{
+	height: 188px;
+	overflow: hidden;
+	position: relative;
+}
+
+figure.construccion figcaption{
+	background: rgba(0,0,0,.4);
+	bottom: 0;
+	color: white;
+	font: 2em/25px 'Kreon-Light';
+	height: 100%;
+	padding: 125px 10px 10px 10px;
+	position: absolute;
+	width: 100%;
+}
+
+#construccion .detalle{
+	background: #ecf0f1;
+	color: #6e7780;
+	font: 1.3em 'Kreon-Light';
+}
+
+#construccion .detalle ul{
+	margin: 0;
+	padding: 0;
+}
+
+#construccion .detalle ul li{
+	list-style-type: none;
+	padding: 10px;
+}
+
+
 /* ############ Mediaqueries ############ */
 
 /*768*/

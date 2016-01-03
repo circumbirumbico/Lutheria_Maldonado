@@ -17,6 +17,7 @@ Template Name: Plantilla de Historia
 		</div>
 	</div>
 </h1>
+
 <!-- omar-maldonado -->
 <section id="historia">
 	<div class="container">
