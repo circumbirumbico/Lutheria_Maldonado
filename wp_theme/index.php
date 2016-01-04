@@ -10,15 +10,15 @@
 		<div class="row">
 
 			<div class="col-sm-4">
-				<figure>
-					<?php echo get_the_post_thumbnail(29) ?>
+				<figure class="circulo">
+					<?php echo get_the_post_thumbnail(24) ?>
 				</figure>
 			</div>
 
 			<div class="col-sm-8">
-				<h1><?php echo get_the_title(29) ?></h1>
+				<h1><?php echo get_the_title(24) ?></h1>
 				<?php 
-					$my_postid = 29;
+					$my_postid = 24;
 					$content_post = get_post($my_postid);
 					$content = $content_post->post_content;
 					$content = apply_filters('the_content', $content);
@@ -31,12 +31,12 @@
 
 <!-- galeria -->
 <section id="galeria">
-	<h2><?php echo get_the_title(42) ?></h2>
+	<h2><?php echo get_the_title(27) ?></h2>
 	<div class="container-fluid">
 
 		<div class="row">			
 			<?php 
-				$my_postid = 42;
+				$my_postid = 27;
 				$content_post = get_post($my_postid);
 				$content = $content_post->post_content;
 				$content = apply_filters('the_content', $content);
@@ -49,24 +49,24 @@
 
 <!-- inicios -->
 <section id="inicios">
-	<h2><?php echo get_the_title(32) ?></h2>
+	<h2><?php echo get_the_title(35) ?></h2>
 
 	<?php 
-		$my_postid = 32;
+		$my_postid = 35;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);
 		echo $content
 	?>
  
-	<button>Leer más</button>
+	<a href="/historia" class="btn">Leer más</a>
 </section>
 
 <!-- luthier -->
 <section id="luthier">
 	<h2>Omar Maldonado</h2>
 	<?php 
-		$my_postid = 38;
+		$my_postid = 37;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);
@@ -78,7 +78,7 @@
 <!-- testimonio -->
 <section id="testimonio">
 	<?php 
-		$my_postid = 34;
+		$my_postid = 39;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);

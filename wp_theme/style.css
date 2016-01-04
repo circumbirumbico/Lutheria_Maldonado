@@ -47,6 +47,23 @@ h1, h2{
 	margin-top: 0;
 }
 
+h1.interno{
+	background: #cf8114;
+	color: white;
+	margin: 0;
+	padding: 1em 0;
+}
+
+h1.interno{
+	font-family: 'Kreon-Light';
+	font-weight: normal;
+	color: white;
+}
+
+h1.interno strong{
+	font-family: 'Kreon-Bold';
+}
+
 p{
 	font-size: 17px;
 }
@@ -68,6 +85,7 @@ a, button, input, textarea{
 
 button,
 input,
+a.btn,
 textarea{
 	background: none;
 	border-radius: 6px;
@@ -84,6 +102,19 @@ button:hover{
 
 h2 + p{
 	margin-bottom: 28px;
+}
+
+figure.circulo{
+	border-radius: 100%;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	height: 253px;
+	overflow: hidden;
+	width: 253px;
+}
+
+figure.circulo img{
+	height: auto;
+	width: 260px;
 }
 
 /*header*/
@@ -190,16 +221,7 @@ header .container{
 }
 
 #omar-maldonado figure{
-	border-radius: 100%;
 	border: 10px solid rgba(255, 255, 255, 0.2);
-	height: 253px;
-	overflow: hidden;
-	width: 253px;
-}
-
-#omar-maldonado figure img{
-	height: auto;
-	width: 260px;
 }
 
 /*galeria*/
@@ -218,7 +240,7 @@ header .container{
 }
 
 #galeria figure{
-	height: 254px;
+	height: 205px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
@@ -271,7 +293,12 @@ header .container{
 	width: 900px;
 }
 
-#inicios button:hover{
+#inicios .btn{
+	color: white;
+}
+
+#inicios .btn:hover{
+	background: white;
 	color: #cf8114;
 }
 
@@ -390,6 +417,66 @@ header .container{
 	clear: both;
 }
 
+
+/*historia*/
+#cabecera-historia{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/contacto-lutheria-maldonado.jpg');
+	background-position: center center, 0 0;
+	background-size: cover, cover;
+	height: 600px;
+}
+
+#historia figure{
+	border: 10px solid #e7e7e7;
+}
+
+
+/*construccion*/
+#cabecera-construccion{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -150px;
+	background-size: cover, cover;
+	height: 600px;
+}
+
+figure.construccion{
+	height: 188px;
+	overflow: hidden;
+	position: relative;
+}
+
+figure.construccion figcaption{
+	background: rgba(0,0,0,.4);
+	bottom: 0;
+	color: white;
+	font: 2em/25px 'Kreon-Light';
+	height: 100%;
+	padding: 125px 10px 10px 10px;
+	position: absolute;
+	width: 100%;
+}
+
+#construccion .detalle{
+	background: #ecf0f1;
+	color: #6e7780;
+	font: 1.3em 'Kreon-Light';
+}
+
+#construccion .detalle ul{
+	margin: 0;
+	padding: 0;
+}
+
+#construccion .detalle ul li{
+	list-style-type: none;
+	padding: 10px;
+}
 
 
 /* ############ Mediaqueries ############ */
