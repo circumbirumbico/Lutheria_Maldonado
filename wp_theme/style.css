@@ -229,6 +229,10 @@ header .container{
 	padding-bottom: 0;
 }
 
+#galeria.page-galeria{
+	padding: 3em 0;
+}
+
 #galeria p{
 	margin: 0;
 }
@@ -240,7 +244,7 @@ header .container{
 }
 
 #galeria figure{
-	height: 205px;
+	height: 190px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
@@ -348,7 +352,7 @@ header .container{
 					      rgba(41,41,41, .8), 
 					      rgba(41,41,41, .8)
 					    ), url('img/contacto-lutheria-maldonado.jpg');
-	background-position: center center, 0 -650px;
+	background-position: center center, 0 -520px;
 	background-size: cover, cover;
 	color: white;
 }
@@ -426,7 +430,7 @@ header .container{
 					    ), url('img/contacto-lutheria-maldonado.jpg');
 	background-position: center center, 0 0;
 	background-size: cover, cover;
-	height: 600px;
+	height: 300px;
 }
 
 #historia figure{
@@ -442,7 +446,7 @@ header .container{
 					    ), url('img/lutheria.jpg');
 	background-position: center center, 0 -150px;
 	background-size: cover, cover;
-	height: 600px;
+	height: 300px;
 }
 
 figure.construccion{
@@ -474,8 +478,17 @@ figure.construccion figcaption{
 }
 
 #construccion .detalle ul li{
+    border-bottom: 1px solid #DEDEDE;
 	list-style-type: none;
 	padding: 10px;
+}
+
+#construccion .detalle ul li:last-child{
+	border-bottom: 0;
+}
+
+#construccion .detalle ul li strong{
+	display: block;
 }
 
 

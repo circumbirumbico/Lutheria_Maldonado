@@ -6,6 +6,8 @@ Template Name: Plantilla de Galeria
 
 <?php get_header(); ?>
 
+<header id="cabecera-construccion"></header>
+
 <h1 class="interno">
 	<div class="container">
 		<div class="row">
@@ -17,7 +19,7 @@ Template Name: Plantilla de Galeria
 </h1>
 
 <!-- galeria -->
-<section id="galeria">
+<section id="galeria" class="page-galeria">
 	<div class="container-fluid">
 
 		<div class="row">			
