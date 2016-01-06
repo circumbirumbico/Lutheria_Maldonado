@@ -224,13 +224,14 @@ header .container{
 	border: 10px solid rgba(255, 255, 255, 0.2);
 }
 
+.nopadding{
+	border-bottom: 7px solid #cf8114;
+	padding: 0;
+}
+
 /*galeria*/
 #galeria{
 	padding-bottom: 0;
-}
-
-#galeria.page-galeria{
-	padding: 3em 0;
 }
 
 #galeria p{
@@ -464,6 +465,11 @@ figure.construccion{
 	position: relative;
 }
 
+figure.construccion img{
+	height: auto;
+	width: 100%;
+}
+
 figure.construccion figcaption{
 	background: rgba(0,0,0,.4);
 	bottom: 0;
@@ -478,7 +484,7 @@ figure.construccion figcaption{
 #construccion .detalle{
 	background: #ecf0f1;
 	color: #6e7780;
-	/*font: 1.3em 'Kreon-Light';*/
+	margin-bottom: 10px;
 }
 
 #construccion .detalle ul{

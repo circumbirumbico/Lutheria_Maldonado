@@ -19,7 +19,7 @@ Template Name: Plantilla de Galeria
 </h1>
 
 <!-- galeria -->
-<section id="galeria" class="page-galeria">
+<section id="galeria" class="page-galeria nopadding">
 	<div class="container-fluid">
 
 		<div class="row">			
