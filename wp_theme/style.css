@@ -244,7 +244,7 @@ header .container{
 }
 
 #galeria figure{
-	height: 190px;
+	height:205px;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
@@ -283,6 +283,10 @@ header .container{
 
 #galeria figure:hover .fa-picture-o{
 	opacity: .7;
+}
+
+#fancybox-close{
+	/*margin-right: -20px;*/
 }
 
 /*inicios*/
@@ -325,11 +329,16 @@ header .container{
 	width: 460px;
 }
 
-#luthier button{
+#luthier .btn{
+	color: white;
+	display: inline-block;
 	margin-top: 28px;
 }
 
-#luthier button:hover{
+#luthier .btn:hover{
+	background: white;
+	text-decoration: none;
+	border: 1px solid white;
 	color: #333;
 }
 
@@ -469,7 +478,7 @@ figure.construccion figcaption{
 #construccion .detalle{
 	background: #ecf0f1;
 	color: #6e7780;
-	font: 1.3em 'Kreon-Light';
+	/*font: 1.3em 'Kreon-Light';*/
 }
 
 #construccion .detalle ul{
