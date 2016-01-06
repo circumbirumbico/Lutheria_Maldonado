@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+
+	<script src="<?php bloginfo('template_directory') ?>/js/jquery-2.1.4.min.js"></script>
 	<?php wp_head() ?>
 </head>
 <body>

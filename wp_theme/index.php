@@ -59,7 +59,7 @@
 		echo $content
 	?>
  
-	<a href="/historia" class="btn">Leer más</a>
+	<a href="<?php bloginfo('url'); ?>/historia" class="btn">Leer más</a>
 </section>
 
 <!-- luthier -->
@@ -72,7 +72,7 @@
 		$content = apply_filters('the_content', $content);
 		echo $content
 	?>
-	<button>Ver video</button>
+	<a href="https://www.youtube.com/watch?v=b5MP-vw1Az8" class="fancybox-youtube btn">Ver video</a>
 </section>
 
 <!-- testimonio -->
