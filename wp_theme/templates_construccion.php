@@ -28,7 +28,7 @@ Template Name: Plantilla de Construcción
 			while (have_posts()) : the_post();
 		?>
 
-			<div class="col-sm-3">
+			<div class="col-sm-4">
 				<figure class="construccion">
 					<?php echo get_the_post_thumbnail(); ?>
 					<figcaption>
