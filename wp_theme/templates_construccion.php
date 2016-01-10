@@ -19,8 +19,8 @@ Template Name: Plantilla de Construcción
 </h1>
 
 <!-- construcción -->
-<section id="construccion">
-	<div class="container">
+<section id="construccion" class="nopadding">
+	<div class="container-fluid">
 		<div class="row">	
 
 		<?php 
@@ -34,11 +34,13 @@ Template Name: Plantilla de Construcción
 					<figcaption>
 						<span><?php echo get_the_title(); ?></span>
 					</figcaption>
-				</figure>
 
-				<div class="detalle">
-					<?php the_content(); ?>
-				</div>
+					<div class="detalle">
+						<?php the_content(); ?>
+					</div>
+
+					<img src="<?php bloginfo('template_directory') ?>/img/cerrar.png" alt="cerrar" class="cerrar-detalle">
+				</figure>				
 			</div>
 				
 		<?php endwhile; ?>
