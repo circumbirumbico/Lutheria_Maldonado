@@ -7,7 +7,9 @@
 	<h2><strong>Contacto</strong> <?php bloginfo('name') ?></h2>
 	<div class="container">
 		<div class="row">
-			<?php echo do_shortcode( '[contact-form-7 id="64" title="Contact form 1"]' ); ?>
+			<div class="col-sm-offset-1 col-sm-10">
+				<?php echo do_shortcode( '[contact-form-7 id="64" title="Contact form 1"]' ); ?>
+			</div>
 		</div>
 
 		<div class="copyright">
@@ -22,6 +24,7 @@
 //]]></script>
 
 
+<script src="<?php bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/app.js"></script>
 
 <?php wp_footer() ?>

@@ -427,9 +427,32 @@ header .container{
 	text-align: center;
 }
 
-#contacto div.wpcf7-validation-errors{
+#contacto .wpcf7-response-output{
+    border-radius: 5px;
 	clear: both;
+	margin: 1em;
 }
+
+#contacto .wpcf7-validation-errors{
+	color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+#contacto span.wpcf7-not-valid-tip{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+#contacto .wpcf7-mail-sent-ok{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
 
 
 /*historia*/
@@ -471,12 +494,18 @@ figure.construccion img{
 }
 
 figure.construccion figcaption{
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.6);
+	height: 100%;
+	position: absolute;
+	top: 0;	
+	width: 100%;
+}
+
+figure.construccion figcaption span{
 	bottom: 0;
 	color: white;
 	font: 2em/25px 'Kreon-Light';
-	height: 100%;
-	padding: 125px 10px 10px 10px;
+	padding: 12px;
 	position: absolute;
 	width: 100%;
 }

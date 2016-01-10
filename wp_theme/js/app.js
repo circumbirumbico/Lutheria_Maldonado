@@ -37,5 +37,6 @@ $(function(){
 		$(this).parents('a').attr('rel', 'lightbox[roadtrip]'); //# agrego rel
 		$(this).parents('a').attr('title', $(this).attr('alt')); //# agrego title a galería
 	});
+	
 
 });

@@ -31,7 +31,9 @@ Template Name: Plantilla de Construcción
 			<div class="col-sm-3">
 				<figure class="construccion">
 					<?php echo get_the_post_thumbnail(); ?>
-					<figcaption><?php echo get_the_title(); ?></figcaption>
+					<figcaption>
+						<span><?php echo get_the_title(); ?></span>
+					</figcaption>
 				</figure>
 
 				<div class="detalle">
@@ -40,8 +42,6 @@ Template Name: Plantilla de Construcción
 			</div>
 				
 		<?php endwhile; ?>
-
-			
 
 		
 		</div>
