@@ -136,7 +136,7 @@ header .container{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 99;
+	z-index: 200;
 }
 
 .topbar nav{
@@ -533,6 +533,10 @@ figure.construccion .cerrar-detalle{
 	cursor: pointer;
 }
 
+#construccion{
+	background: #1c1826;
+}
+
 #construccion .detalle{
 	background: #ecf0f1;
 	color: #6e7780;
@@ -565,7 +569,8 @@ figure.construccion .cerrar-detalle{
 }
 
 #construccion [class^="col-"]{
-	padding: 0;
+	/*padding: 0;*/
+	margin-bottom: 20px;
 }
 
 /* ############ Mediaqueries ############ */

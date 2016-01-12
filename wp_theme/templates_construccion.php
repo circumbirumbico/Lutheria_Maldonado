@@ -19,7 +19,7 @@ Template Name: Plantilla de Construcción
 </h1>
 
 <!-- construcción -->
-<section id="construccion" class="nopadding">
+<section id="construccion">
 	<div class="container-fluid">
 		<div class="row">	
 
@@ -28,7 +28,7 @@ Template Name: Plantilla de Construcción
 			while (have_posts()) : the_post();
 		?>
 
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<figure class="construccion">
 					<?php echo get_the_post_thumbnail(); ?>
 					<figcaption>
