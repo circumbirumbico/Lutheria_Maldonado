@@ -29,18 +29,22 @@ Template Name: Plantilla de Construcción
 		?>
 
 			<div class="col-sm-3">
-				<figure class="construccion">
-					<?php echo get_the_post_thumbnail(); ?>
-					<figcaption>
-						<span><?php echo get_the_title(); ?></span>
-					</figcaption>
+				<a href="<?php the_permalink() ?>">
+					<figure class="construccion">
+						<?php echo get_the_post_thumbnail(); ?>
+						<figcaption>
+							<span>Nuevo!</span>
+						</figcaption>
 
-					<div class="detalle">
-						<?php the_content(); ?>
-					</div>
 
-					<img src="<?php bloginfo('template_directory') ?>/img/cerrar.png" alt="cerrar" class="cerrar-detalle">
-				</figure>				
+						<div class="detalle">
+							<?php the_content(); ?>
+						</div>
+
+						<img src="<?php bloginfo('template_directory') ?>/img/cerrar.png" alt="cerrar" class="cerrar-detalle">
+					</figure>				
+					<h4 class="nombre-producto"><?php echo get_the_title(); ?></h4>
+				</a>
 			</div>
 				
 		<?php endwhile; ?>
