@@ -33,7 +33,9 @@ Template Name: Plantilla de Construcción
 					<figure class="construccion">
 						<?php echo get_the_post_thumbnail(); ?>
 						<figcaption>
-							<span>Nuevo!</span>
+							<?php if( has_category('4')) { ?>
+							<span>¡Nuevo!</span>
+							<?php } ?>
 						</figcaption>
 
 

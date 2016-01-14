@@ -507,7 +507,7 @@ figure.construccion figcaption{
 }
 
 figure.construccion figcaption:hover{
-	opacity: .5 !important;
+	background: rgba(0,0,0,.3);
 }
 
 figure.construccion figcaption span{
@@ -548,7 +548,7 @@ figure.construccion .cerrar-detalle{
 #construccion a:hover,
 #construccion a:active,
 #construccion a:focus{
-	border-bottom: 3px solid #CF8114;
+	/*border-bottom: 3px solid #CF8114;*/
 	text-decoration: none;
 }
 
@@ -557,7 +557,7 @@ figure.construccion .cerrar-detalle{
 }
 
 #construccion a:hover h4{
-	border-bottom: 3px solid #CF8114;
+	opacity: .7;
 }
 
 #construccion .detalle{
