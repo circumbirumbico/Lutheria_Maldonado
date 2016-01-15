@@ -11,13 +11,31 @@
 				<div class="row">
 
 					<div class="col-sm-6">
-						<figure>
+						<figure class="big-img">
 							<?php echo get_the_post_thumbnail(); ?>
+							<figcaption>
+								<?php if( has_category('4')) { ?>
+									<span class="nuevo">¡Nuevo!</span>
+								<?php } ?>
+							</figcaption>
 						</figure>
 
-						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'segunda-imagen');  endif; ?>
-						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'tercera-imagen');  endif; ?>
-						<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'cuarta-imagen');  endif; ?>
+						<div class="thumb">
+							<?php echo get_the_post_thumbnail(); ?>
+						</div>
+						
+						<div class="thumb">
+							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'segunda-imagen');  endif; ?>
+						</div>
+
+						<div class="thumb">
+							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'tercera-imagen');  endif; ?>
+						</div>
+
+						<div class="thumb">
+							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'cuarta-imagen');  endif; ?>
+						</div>
+
 
 					</div>
 

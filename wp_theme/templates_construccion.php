@@ -70,7 +70,7 @@ cargando...
 						<?php echo get_the_post_thumbnail(); ?>
 						<figcaption>
 							<?php if( has_category('4')) { ?>
-							<span>¡Nuevo!</span>
+							<span class="nuevo">¡Nuevo!</span>
 							<?php } ?>
 						</figcaption>
 
@@ -80,8 +80,9 @@ cargando...
 						</div>
 
 						<img src="<?php bloginfo('template_directory') ?>/img/cerrar.png" alt="cerrar" class="cerrar-detalle">
+
+						<h4 class="nombre-producto"><?php echo get_the_title(); ?></h4>
 					</figure>				
-					<h4 class="nombre-producto"><?php echo get_the_title(); ?></h4>
 				</a>
 			</div>
 				
