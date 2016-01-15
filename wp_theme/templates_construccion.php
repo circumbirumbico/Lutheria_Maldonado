@@ -6,6 +6,42 @@ Template Name: Plantilla de Construcción
 
 <?php get_header(); ?>
 
+<div class="cargandotodo"></div>
+
+<script>
+	$(function(){
+
+		$(".modalbox").on("click", function (thumb){
+			thumb.preventDefault();
+			$('.loading').fadeIn();
+			var laUrl = $(this).attr('href');
+
+
+			$.get( laUrl, function (data) {
+				$('.loading').fadeOut();
+				$( ".cargandotodo" ).html(data);
+				$('#backgroundPopup').animate({opacity: 0.8}).fadeIn(400);
+				$('.toPopup').animate({opacity: 1}).fadeIn(400);
+			}); //fin get
+
+		}); //fin modalbox
+
+	}); //fin funcion
+</script>
+
+<div class="loading none center">
+cargando...
+	<div class="spinner">
+	  <div class="rect1"></div>
+	  <div class="rect2"></div>
+	  <div class="rect3"></div>
+	  <div class="rect4"></div>
+	  <div class="rect5"></div>
+	</div>
+</div>
+
+<!-- template -->
+
 <header id="cabecera-construccion"></header>
 
 <h1 class="interno">
@@ -29,7 +65,7 @@ Template Name: Plantilla de Construcción
 		?>
 
 			<div class="col-sm-3">
-				<a href="<?php the_permalink() ?>">
+				<a href="<?php the_permalink() ?>" class="modalbox">
 					<figure class="construccion">
 						<?php echo get_the_post_thumbnail(); ?>
 						<figcaption>

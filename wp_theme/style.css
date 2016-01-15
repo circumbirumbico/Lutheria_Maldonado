@@ -130,6 +130,10 @@ header .container{
 	height: 730px;
 }
 
+.none{
+	display: none;
+}
+
 .topbar{
 	height: 110px;
 	padding: 12px 0;
@@ -596,6 +600,20 @@ figure.construccion .cerrar-detalle{
 	margin-bottom: 30px;
 }
 
+/*popup producto*/
+.detalleProducto img{
+	height: auto;
+	width: 100%;
+}
+
+.detalleProducto .col-sm-6:first-child{
+	padding-left: 0;
+}
+
+.detalleProducto .col-sm-6:last-child{
+	padding-right: 0;
+}
+
 /* ############ Mediaqueries ############ */
 
 /*768*/
@@ -613,6 +631,10 @@ figure.construccion .cerrar-detalle{
 
 	#contacto input.asunto{
 		margin-bottom: 22px;
+	}
+
+	.detalleProducto img{
+		margin-bottom: 1em;
 	}
 }
 

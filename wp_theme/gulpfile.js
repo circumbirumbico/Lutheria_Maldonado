@@ -5,7 +5,7 @@ var gulp 		= require('gulp'),
 
 // browserSync
 gulp.task('browser-sync', function(){
-	browserSync.init(["style.css" , "./js/app.js" , "*.php"],{
+	browserSync.init(["style.css", "./css/*.css", "./js/app.js", "*.php"],{
 		open: false,
 		options: {
 			proxy: "localhost:3000/wordpress",

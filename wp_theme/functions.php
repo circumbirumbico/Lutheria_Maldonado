@@ -17,12 +17,32 @@ remove_filter('template_redirect', 'redirect_canonical');
 if (class_exists('MultiPostThumbnails')) {
     new MultiPostThumbnails(
         array(
-            'label' => 'Secondary Image',
-            'id' => 'secondary-image',
+            'label' => 'Segunda Imagen',
+            'id' => 'segunda-imagen',
+            'post_type' => 'post'
+        )
+    );
+
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Tercera Imagen',
+            'id' => 'tercera-imagen',
+            'post_type' => 'post'
+        )
+    );
+
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Cuarta Imagen',
+            'id' => 'cuarta-imagen',
             'post_type' => 'post'
         )
     );
 }
+
+
+
+
 
 //eliminando basura
 remove_action('wp_head', 'rsd_link');
@@ -47,19 +67,5 @@ function footer_enqueue_scripts() {
 } 
 
 add_action('after_setup_theme', 'footer_enqueue_scripts'); 
-
-// remove_filter( 'the_content', 'wpautop' );
-
-// Quitar link por defecto a imágenes
-// function wpb_imagelink_setup() {
-// $image_set = get_option( 'image_default_link_type' );
-
-// if ($image_set !== 'none') {
-// update_option('image_default_link_type', 'none');
-// }
-// }
-// add_action('admin_init', 'wpb_imagelink_setup', 10);
-
-
 
 ?>
