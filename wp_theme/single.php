@@ -10,7 +10,7 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 col-xs-12">
 						<figure class="big-img">
 							<?php echo get_the_post_thumbnail(); ?>
 							<figcaption>
@@ -20,26 +20,26 @@
 							</figcaption>
 						</figure>
 
-						<div class="thumb">
+						<div class="thumb thumb1">
 							<?php echo get_the_post_thumbnail(); ?>
 						</div>
 						
-						<div class="thumb">
+						<div class="thumb thumb2">
 							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'segunda-imagen');  endif; ?>
 						</div>
 
-						<div class="thumb">
+						<div class="thumb thumb3">
 							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'tercera-imagen');  endif; ?>
 						</div>
 
-						<div class="thumb">
+						<div class="thumb thumb4">
 							<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'cuarta-imagen');  endif; ?>
 						</div>
 
 
 					</div>
 
-					<div class="col-sm-6">									
+					<div class="col-sm-6 col-xs-12">									
 						<h2><?php the_title(); ?></h2>
 						<div class="content"><?php the_content(); ?></div>	
 					</div>		
@@ -58,6 +58,7 @@
 
 
 <script>
+
 	//muevo la galería dentro de la columna derecha del popUp
 	$('.content').find('.gallery').appendTo('.col_right');						
 
@@ -79,6 +80,13 @@
 		setTimeout(function(){ 
 			$('#backgroundPopup, .toPopup, .fancybox-overlay').remove();
 		}, 500);
-	}									
+	}						
+
+
+	// cambiar fotos en el popup
+	$('.thumb img').click(function(){
+		var thumbnail = $(this).attr('src');
+		$('.big-img img').attr('srcset', thumbnail);
+	});			
 
 </script>	

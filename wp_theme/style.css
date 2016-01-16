@@ -179,13 +179,17 @@ header .container{
 	background: #2c3e50;
 	display: none;
 	height: 100%;
-	left: -250px;
+	left: -100%;
 	margin-top: 0;
 	padding: 1em 0;
 	position: fixed;
 	top: 0;
-	width: 250px;
+	width: 100%;
 	z-index: 99;
+}
+
+.topbar nav.responsive ul{
+	padding: 0;
 }
 
 .topbar nav.responsive li{
@@ -194,7 +198,8 @@ header .container{
 
 .topbar nav.responsive a{
 	display: block;
-	padding: 6px 12px;
+	line-height: initial;
+	padding: 12px 12px;
 }
 
 .topbar nav.responsive a:hover{
@@ -212,6 +217,7 @@ header .container{
 	right: .5em;
 	top: .5em;
 	width: 24px;
+	z-index: 1999;
 	-webkit-transition: all .25s;
 	-o-transition: all .25s;
 	transition: all .25s;
@@ -526,7 +532,7 @@ figure.construccion figcaption:hover{
 	padding: 12px;
 	position: absolute;
 	text-align: center;
-	top: 10px;
+	top: 14px;
 	width: 200px;
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
@@ -626,6 +632,14 @@ figure.construccion .cerrar-detalle{
 .thumb{
 	float: left;
 	width: 25%;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.thumb:hover{
+	opacity: .8;
 }
 
 .big-img{
