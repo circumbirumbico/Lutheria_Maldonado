@@ -8,7 +8,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-offset-1 col-sm-10">
-				<?php echo do_shortcode( '[contact-form-7 id="64" title="Contact form 1"]' ); ?>
+				<?php echo do_shortcode( '[contact-form-7 id="10" title="Contact form 1"]' ); ?>
 			</div>
 		</div>
 
