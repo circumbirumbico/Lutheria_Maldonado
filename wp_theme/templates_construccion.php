@@ -72,12 +72,7 @@ cargando...
 							<?php if( has_category('4')) { ?>
 							<span class="nuevo">¡Nuevo!</span>
 							<?php } ?>
-						</figcaption>
-
-
-						<div class="detalle">
-							<?php the_content(); ?>
-						</div>
+						</figcaption>					
 
 						<img src="<?php bloginfo('template_directory') ?>/img/cerrar.png" alt="cerrar" class="cerrar-detalle">
 
