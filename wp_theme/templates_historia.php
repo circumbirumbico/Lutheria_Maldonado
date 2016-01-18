@@ -25,13 +25,13 @@ Template Name: Plantilla de Historia
 
 			<div class="col-sm-4">
 				<figure class="circulo">
-					<?php echo get_the_post_thumbnail(9) ?>
+					<?php echo get_the_post_thumbnail(11) ?>
 				</figure>
 			</div>
 
 			<div class="col-sm-8">
 				<?php 
-					$my_postid = 9;
+					$my_postid = 11;
 					$content_post = get_post($my_postid);
 					$content = $content_post->post_content;
 					$content = apply_filters('the_content', $content);

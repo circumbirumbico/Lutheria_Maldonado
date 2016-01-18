@@ -11,14 +11,14 @@
 
 			<div class="col-sm-4">
 				<figure class="circulo">
-					<?php echo get_the_post_thumbnail(24) ?>
+					<?php echo get_the_post_thumbnail(22) ?>
 				</figure>
 			</div>
 
 			<div class="col-sm-8">
-				<h1><?php echo get_the_title(24) ?></h1>
+				<h1><?php echo get_the_title(22) ?></h1>
 				<?php 
-					$my_postid = 24;
+					$my_postid = 22;
 					$content_post = get_post($my_postid);
 					$content = $content_post->post_content;
 					$content = apply_filters('the_content', $content);
@@ -31,12 +31,12 @@
 
 <!-- galeria -->
 <section id="galeria">
-	<h2><?php echo get_the_title(27) ?></h2>
+	<h2><?php echo get_the_title(111111) ?></h2>
 	<div class="container-fluid">
 
 		<div class="row">			
 			<?php 
-				$my_postid = 27;
+				$my_postid = 111111;
 				$content_post = get_post($my_postid);
 				$content = $content_post->post_content;
 				$content = apply_filters('the_content', $content);
@@ -49,10 +49,10 @@
 
 <!-- inicios -->
 <section id="inicios">
-	<h2><?php echo get_the_title(35) ?></h2>
+	<h2><?php echo get_the_title(24) ?></h2>
 
 	<?php 
-		$my_postid = 35;
+		$my_postid = 24;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);
@@ -66,7 +66,7 @@
 <section id="luthier">
 	<h2>Omar Maldonado</h2>
 	<?php 
-		$my_postid = 37;
+		$my_postid = 26;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);
@@ -78,7 +78,7 @@
 <!-- testimonio -->
 <section id="testimonio">
 	<?php 
-		$my_postid = 39;
+		$my_postid = 28;
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);

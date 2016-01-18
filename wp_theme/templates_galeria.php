@@ -12,7 +12,7 @@ Template Name: Plantilla de Galeria
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<?php echo get_the_title(27) ?>
+				<?php echo get_the_title(16) ?>
 			</div>
 		</div>
 	</div>
@@ -24,7 +24,7 @@ Template Name: Plantilla de Galeria
 
 		<div class="row">			
 			<?php 
-				$my_postid = 27;
+				$my_postid = 16;
 				$content_post = get_post($my_postid);
 				$content = $content_post->post_content;
 				$content = apply_filters('the_content', $content);
