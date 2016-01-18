@@ -1,0 +1,723 @@
+/*
+Theme Name: Luthería Maldonado
+Theme URI: http://www.luteriamaldonado.cl
+Author: Carlos Sánchez
+Author URI: http://www.westerndesign.cl
+Description: 
+Version: 1.1
+Tags: html5, css3, responsive design, responsive-layout, seo, icofonts.
+Text Domain: luteriamaldonado
+*/
+
+@import url('css/font-awesome.css');
+
+@font-face {
+	font-family: 'Kreon-Light';
+	src: url('fonts/Kreon-Light.eot');
+	src: local('☺'), url('fonts/Kreon-Light.woff') format('woff'), url('fonts/Kreon-Light.ttf') format('truetype'), url('fonts/Kreon-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Regular';
+	src: url('fonts/Kreon-Regular.eot');
+	src: local('☺'), url('fonts/Kreon-Regular.woff') format('woff'), url('fonts/Kreon-Regular.ttf') format('truetype'), url('fonts/Kreon-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kreon-Bold';
+	src: url('fonts/Kreon-Bold.eot');
+	src: local('☺'), url('fonts/Kreon-Bold.woff') format('woff'), url('fonts/Kreon-Bold.ttf') format('truetype'), url('fonts/Kreon-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 110px;
+}
+
+.center{
+	text-align: center;
+}
+
+h1, h2{
+	font-family: 'Kreon-Bold';
+	font-size: 2.4em;
+	letter-spacing: 3px;
+	margin-top: 0;
+}
+
+h1.interno{
+	background: #cf8114;
+	color: white;
+	margin: 0;
+	padding: 1em 0;
+}
+
+h1.interno{
+	font-family: 'Kreon-Light';
+	font-weight: normal;
+	color: white;
+}
+
+h1.interno strong{
+	font-family: 'Kreon-Bold';
+}
+
+p{
+	font-size: 17px;
+}
+
+section,
+footer{
+	padding: 3em 0;
+}
+
+a{
+	cursor: pointer;
+}
+
+a, button, input, textarea{
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+button,
+input,
+a.btn,
+textarea{
+	background: none;
+	border-radius: 6px;
+	border: 1px solid;
+	padding: 6px 18px;
+	text-align: center;
+	outline: 0;
+}
+
+button:hover{
+	background: white;
+	border: 1px solid white;
+}
+
+h2 + p{
+	margin-bottom: 28px;
+}
+
+figure.circulo{
+	border-radius: 100%;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+	height: 253px;
+	overflow: hidden;
+	width: 253px;
+}
+
+figure.circulo img{
+	height: auto;
+	width: 260px;
+}
+
+/*header*/
+header,
+.topbar{
+	background: black;
+}
+
+header .container{
+	background-image: url('img/lutheria-maldonado.png'), url('img/lutheria-maldonado.jpg');
+	background-position: 99%, center left;
+	background-repeat: no-repeat;
+	height: 730px;
+}
+
+.none{
+	display: none;
+}
+
+.topbar{
+	height: 110px;
+	padding: 12px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+}
+
+.topbar nav{
+	line-height: 83px;
+}
+
+.topbar nav ul{
+	margin: 0;
+}
+
+.topbar nav li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.topbar nav a{
+	color: #bbbbbb;
+	padding: 6px 16px;
+	text-transform: uppercase;
+}
+
+.topbar nav a:hover{
+	color: #bbbbbb;
+}
+
+.topbar nav li:last-child a{
+	padding-right: 0;
+}
+
+/*menu-responsivo*/
+.topbar nav.responsive{
+	background: #2c3e50;
+	display: none;
+	height: 100%;
+	left: -100%;
+	margin-top: 0;
+	padding: 1em 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.topbar nav.responsive ul{
+	padding: 0;
+}
+
+.topbar nav.responsive li{
+	display: block;
+}
+
+.topbar nav.responsive a{
+	display: block;
+	line-height: initial;
+	padding: 12px 12px;
+}
+
+.topbar nav.responsive a:hover{
+	background: #34495e;
+	text-decoration: none;
+}
+
+.topbar .fa{
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-size: 2em;
+	height: 24px;
+	position: absolute;
+	right: .5em;
+	top: .5em;
+	width: 24px;
+	z-index: 1999;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+.topbar figure img{
+	height: auto;
+	width: 180px;
+}
+
+/*perfil*/
+#omar-maldonado{
+	background: #cf8114;
+	color: white;
+}
+
+#omar-maldonado figure{
+	border: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.nopadding{
+	border-bottom: 7px solid #cf8114;
+	padding: 0;
+}
+
+/*galeria*/
+#galeria{
+	padding-bottom: 0;
+}
+
+#galeria p{
+	margin: 0;
+}
+
+#galeria h2{
+	color: #6e7780;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#galeria figure{
+	height:205px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+#galeria figure .fa-picture-o{
+	color: white;
+	font-size:2.5em;
+	left: 50%;
+	margin: -17.5px 0 0 -18.7px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+#galeria img{
+	height: auto;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+	width: 100%;
+}
+
+#galeria img:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
+}
+
+#galeria figure:hover .fa-picture-o{
+	opacity: .7;
+}
+
+/*inicios*/
+#inicios{
+	background: #cf8114;
+	color: white;
+	text-align: center;
+}
+
+#inicios p{
+	margin: 0 auto 2em;
+	width: 900px;
+}
+
+#inicios .btn{
+	color: white;
+}
+
+#inicios .btn:hover{
+	background: white;
+	color: #cf8114;
+}
+
+
+/*luthier*/
+#luthier{
+	background-image: linear-gradient(
+					      rgba(78,78,78, .6), 
+					      rgba(78,78,78, .6)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -250px;
+	background-size: cover, cover;
+	color: white;
+	position: relative;
+	text-align: center;
+}
+
+#luthier p{
+	margin: 0 auto;
+	width: 460px;
+}
+
+#luthier .btn{
+	color: white;
+	display: inline-block;
+	margin-top: 28px;
+}
+
+#luthier .btn:hover{
+	background: white;
+	text-decoration: none;
+	border: 1px solid white;
+	color: #333;
+}
+
+/*testimonio*/
+#testimonio{
+	color: #4e4e4e;
+	font-family: 'Kreon-Regular';
+	text-align: center;	
+}
+
+#testimonio p{
+	font-size: 2.4em;
+	margin: 0 auto;
+	width: 830px;
+}
+
+/*contacto*/
+#contacto{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/contacto-lutheria-maldonado.jpg');
+	background-position: center center, 0 -520px;
+	background-size: cover, cover;
+	color: white;
+}
+
+#contacto .sobre{
+	font-size: 4em;
+	margin-bottom: 28px;
+	text-align: center;
+}
+
+#contacto h2{
+	font-family: 'Kreon-Light';
+	font-weight: normal;
+	text-align: center;
+}
+
+#contacto h2 strong{
+	font-family: 'Kreon-Bold';
+	font-weight: normal;
+}
+
+#contacto input:not([type="submit"]):focus,
+#contacto textarea:focus{
+	background: white;
+	color: #333;
+	outline: 0;
+}
+
+#contacto input,
+#contacto textarea{
+	border-color: rgba(243, 243, 243, .25);
+	margin-bottom: 22px;
+	text-align: left;
+	width: 100%;
+}
+
+#contacto textarea{
+	display: block;
+	height: 90px;
+}
+
+#contacto input.asunto{
+	margin-bottom: 0;
+}
+
+#contacto input[type="submit"]{
+	background: #cf8114;
+	border: 1px solid #cf8114;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#contacto input[type="submit"]:hover{
+	background: transparent;
+	border: 1px solid #DA9536;
+	color: #DA9536;
+}
+
+#contacto .copyright{
+	margin-top: 42px;
+	text-align: center;
+}
+
+#contacto .wpcf7-response-output{
+    border-radius: 5px;
+	clear: both;
+	margin: 1em;
+}
+
+#contacto .wpcf7-validation-errors{
+	color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+#contacto span.wpcf7-not-valid-tip{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+#contacto .wpcf7-mail-sent-ok{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+
+
+/*historia*/
+#cabecera-historia{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/contacto-lutheria-maldonado.jpg');
+	background-position: center center, 0 0;
+	background-size: cover, cover;
+	height: 300px;
+}
+
+#historia figure{
+	border: 10px solid #e7e7e7;
+}
+
+
+/*construccion*/
+#cabecera-construccion{
+	background-image: linear-gradient(
+					      rgba(41,41,41, .8), 
+					      rgba(41,41,41, .8)
+					    ), url('img/lutheria.jpg');
+	background-position: center center, 0 -150px;
+	background-size: cover, cover;
+	height: 300px;
+}
+
+figure.construccion{
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+figure.construccion img{
+	height: auto;
+	width: 100%;
+}
+
+
+figure.construccion figcaption{
+	background: rgba(0,0,0,.6);
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	top: 0;	
+	width: 100%;
+	z-index: 99;
+	-webkit-transition: all .25s;
+	-o-transition: all .25s;
+	transition: all .25s;
+}
+
+figure.construccion figcaption:hover{
+	background: rgba(0,0,0,.3);
+}
+
+.nuevo{
+	background: #F14D4D;
+	color: white;
+	font: 1.6em/25px 'Kreon-Light';
+	left: -60px;
+	padding: 12px;
+	position: absolute;
+	text-align: center;
+	top: 14px;
+	width: 200px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#construccion .nombre-producto{
+	color: white;
+	font: 1.8em/25px 'Kreon-Light';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	z-index: 1001;
+}
+
+figure.construccion .cerrar-detalle{
+	bottom: 16px;
+	position: absolute;
+	right: 16px;
+	width: initial;
+	z-index: 100;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#construccion{
+	background: #1c1826;
+}
+
+#construccion a:hover,
+#construccion a:active,
+#construccion a:focus{
+	/*border-bottom: 3px solid #CF8114;*/
+	text-decoration: none;
+}
+
+#construccion h4{
+	display: inline-block;
+}
+
+#construccion a:hover h4{
+	opacity: .7;
+}
+
+#construccion .detalle{
+	background: #ecf0f1;
+	color: #6e7780;
+	margin-bottom: 10px;
+	opacity: 0;
+	position: absolute;
+	top: 300px;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+}
+
+#construccion .detalle ul{
+	margin: 0;
+	padding: 0;
+}
+
+#construccion .detalle ul li{
+    border-bottom: 1px solid #DEDEDE;
+	list-style-type: none;
+	padding: 10px;
+}
+
+#construccion .detalle ul li:last-child{
+	border-bottom: 0;
+}
+
+#construccion .detalle ul li strong{
+	display: block;
+}
+
+#construccion [class^="col-"]{
+	/*padding: 0;*/
+	margin-bottom: 30px;
+}
+
+/*popup producto*/
+.detalleProducto img{
+	height: auto;
+	width: 100%;
+}
+
+.detalleProducto .col-sm-6:first-child{
+	padding-left: 0;
+}
+
+.detalleProducto .col-sm-6:last-child{
+	padding-right: 0;
+}
+
+.thumb{
+	float: left;
+	width: 25%;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.thumb:hover{
+	opacity: .8;
+}
+
+.big-img{
+	margin-bottom: 1em;
+	overflow: hidden;
+	position: relative;
+}
+
+/* ############ Mediaqueries ############ */
+
+/*768*/
+@media screen and (max-width: 768px){
+	
+	#omar-maldonado h1{
+		margin-top: 22.5px;
+	}
+
+	#inicios p,
+	#luthier p,
+	#testimonio p{
+		width: 90%;
+	}
+
+	#contacto input.asunto{
+		margin-bottom: 22px;
+	}
+
+	.detalleProducto img{
+		margin-bottom: 1em;
+	}
+
+	.toPopup{
+		margin-left: -45%;		
+		width: 90%;
+	}
+}
+
+/*480*/
+@media screen and (max-width: 480px){
+	header .container{
+		background-position: center, center left;		
+		height: 400px;
+	}
+
+	.topbar nav{
+		display: none;
+	}
+
+	.topbar nav.responsive,
+	.topbar .fa{
+		display: block;
+	}
+
+	#omar-maldonado figure{
+		margin: 0 auto;
+	}
+
+	.toPopup{
+		position: absolute;
+	}
+
+	.toPopup .col-sm-6{
+		padding: 0;
+	}
+
+	#historia figure{
+		margin: 0 auto 2em;
+	}
+
+	#historia p{
+		text-align: justify;
+	}
+}
+
+
+/*320*/
+@media screen and (max-width: 320px){
+	header .container{
+		background-size: 80%, cover;
+	}	
+}
