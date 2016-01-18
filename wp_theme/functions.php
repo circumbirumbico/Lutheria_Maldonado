@@ -17,12 +17,32 @@ remove_filter('template_redirect', 'redirect_canonical');
 if (class_exists('MultiPostThumbnails')) {
     new MultiPostThumbnails(
         array(
-            'label' => 'Secondary Image',
-            'id' => 'secondary-image',
+            'label' => 'Segunda Imagen',
+            'id' => 'segunda-imagen',
+            'post_type' => 'post'
+        )
+    );
+
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Tercera Imagen',
+            'id' => 'tercera-imagen',
+            'post_type' => 'post'
+        )
+    );
+
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Cuarta Imagen',
+            'id' => 'cuarta-imagen',
             'post_type' => 'post'
         )
     );
 }
+
+
+
+
 
 //eliminando basura
 remove_action('wp_head', 'rsd_link');
@@ -47,8 +67,5 @@ function footer_enqueue_scripts() {
 } 
 
 add_action('after_setup_theme', 'footer_enqueue_scripts'); 
-
-
-
 
 ?>
