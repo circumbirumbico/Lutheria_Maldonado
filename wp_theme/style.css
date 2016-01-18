@@ -672,8 +672,8 @@ figure.construccion .cerrar-detalle{
 	}
 
 	.toPopup{
+		margin-left: -45%;		
 		width: 90%;
-		margin-left: -45%;
 	}
 }
 
@@ -695,6 +695,10 @@ figure.construccion .cerrar-detalle{
 
 	#omar-maldonado figure{
 		margin: 0 auto;
+	}
+
+	.toPopup{
+		position: absolute;
 	}
 }
 
