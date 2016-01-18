@@ -704,6 +704,14 @@ figure.construccion .cerrar-detalle{
 	.toPopup .col-sm-6{
 		padding: 0;
 	}
+
+	#historia figure{
+		margin: 0 auto 2em;
+	}
+
+	#historia p{
+		text-align: justify;
+	}
 }
 
 
