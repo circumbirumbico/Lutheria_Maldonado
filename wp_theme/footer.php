@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="copyright">
-			© 2015 <?php bloginfo('name') ?> | Todos los derechos reservados.
+			© 2016 <?php bloginfo('name') ?> | Todos los derechos reservados.
 		</div>
 
 	</div>
