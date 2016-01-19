@@ -31,12 +31,12 @@
 
 <!-- galeria -->
 <section id="galeria">
-	<h2><?php echo get_the_title(111111) ?></h2>
+	<h2><?php echo get_the_title(16) ?></h2>
 	<div class="container-fluid">
 
 		<div class="row">			
 			<?php 
-				$my_postid = 111111;
+				$my_postid = 16;
 				$content_post = get_post($my_postid);
 				$content = $content_post->post_content;
 				$content = apply_filters('the_content', $content);
